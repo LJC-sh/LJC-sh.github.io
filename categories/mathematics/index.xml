@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Taro深海芋头</title>
+        <title>Mathematics on Taro深海芋头</title>
         <link>https://ljc-sh.github.io/categories/mathematics/</link>
-        <description>Recent content on Taro深海芋头</description>
+        <description>Recent content in Mathematics on Taro深海芋头</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>深海芋头</copyright>
@@ -13,8 +13,8 @@
         <pubDate>Wed, 03 Sep 2025 17:34:00 +0800</pubDate>
         
         <guid>https://ljc-sh.github.io/p/laplace-transform-vs-fourier-transform/</guid>
-        <description>&lt;h2 id=&#34;laplace-transform-vs-fourier-transform&#34;&gt;Laplace Transform vs Fourier Transform
-&lt;/h2&gt;</description>
+        <description>&lt;img src="https://ljc-sh.github.io/p/laplace-transform-vs-fourier-transform/Pierre-Simon-marquis-de-Laplace.jpg" alt="Featured image of post Laplace Transform vs Fourier Transform" /&gt;&lt;h1 id=&#34;laplace-transform-vs-fourier-transform-in-automatic-control-theory&#34;&gt;Laplace Transform vs Fourier Transform In Automatic Control Theory
+&lt;/h1&gt;</description>
         </item>
         
     </channel>

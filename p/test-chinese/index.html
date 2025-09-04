@@ -447,19 +447,10 @@
 		data-flex-basis="160px"
 	
 ></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">Photo by Florian Klauer on Unsplash</span>](<span class="na">florian-klauer-nptLmg6jqDo-unsplash.jpg</span>)  ![<span class="nt">Photo by Luca Bravo on Unsplash</span>](<span class="na">luca-bravo-alS7ewQ41M8-unsplash.jpg</span>) 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">![<span class="nt">Photo by Helena Hertz on Unsplash</span>](<span class="na">helena-hertz-wWZzXlDpMog-unsplash.jpg</span>)  ![<span class="nt">Photo by Hudai Gayiran on Unsplash</span>](<span class="na">hudai-gayiran-3Od_VKcDEAA-unsplash.jpg</span>)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>相册语法来自 <a class="link" href="https://typlog.com/"  target="_blank" rel="noopener"
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#e06c75">Photo by Florian Klauer on Unsplash</span>](<span style="color:#e06c75">florian-klauer-nptLmg6jqDo-unsplash.jpg</span>)  ![<span style="color:#e06c75">Photo by Luca Bravo on Unsplash</span>](<span style="color:#e06c75">luca-bravo-alS7ewQ41M8-unsplash.jpg</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>![<span style="color:#e06c75">Photo by Helena Hertz on Unsplash</span>](<span style="color:#e06c75">helena-hertz-wWZzXlDpMog-unsplash.jpg</span>)  ![<span style="color:#e06c75">Photo by Hudai Gayiran on Unsplash</span>](<span style="color:#e06c75">hudai-gayiran-3Od_VKcDEAA-unsplash.jpg</span>)
+</span></span></code></pre></div><p>相册语法来自 <a class="link" href="https://typlog.com/"  target="_blank" rel="noopener"
     >Typlog</a></p>
 
 </section>
@@ -550,6 +541,25 @@
      
     
         
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"avatar":"img/avatar.png","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji"],"lang":"zh-CN","locale":{"admin":"站长","placeholder":"欢迎来到我的博客","sofa":"还没有人评论，快来抢沙发吧~~~"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-kohl-beta.vercel.app/","visitor":false});
+</script>
+
     
 
     <footer class="site-footer">

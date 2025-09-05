@@ -600,11 +600,23 @@ $$
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 
 <script>
+    const staticDir = "https://ljc-sh.github.io/";
+    console.log(staticDir);
     const ap = new APlayer({
-        fixed: true,
+        lrcType: 3,
         container: document.getElementById('aplayer'),
-        audio: []
+        audio: [
+            {
+                
+                name: 'You are my lucid dream.',
+                artist: 'LightSw1tch',
+                url: staticDir + 'music/youaremyluciddream/song.mp3',
+                cover: staticDir + 'music/youaremyluciddream/cover.jpg',
+                lrc: staticDir + 'music/youaremyluciddream/lrc.lrc',
+            }
+        ]
     });
+
 </script>
 
 <style>

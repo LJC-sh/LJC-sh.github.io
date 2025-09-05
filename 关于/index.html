@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ljc-sh.github.io/%E5%85%B3%E4%BA%8E/'>
 
-<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="关于">
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="关于">
 <meta property='og:description' content="这里是深海芋头 这个网名是我疫情时候一眼就喜欢的名字，起初是深海芋，但是在注册各种网站的时候，经常有一个烦恼就是重名，而且默认输入法输入“深海芋”时，往往都是“深海鱼”,所以为了矫正，我往往会输入深海芋头，久而久之，深海芋头这个名字也不错，所以就沿用至今了。\n">
 <meta property='og:url' content='https://ljc-sh.github.io/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='Taro深海芋头'>
@@ -510,6 +510,19 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script>
+    const ap = new APlayer({
+        fixed: true,
+        container: document.getElementById('aplayer'),
+        audio: []
+    });
+</script>
+
 <style>
     @font-face {
         font-family: 'fonts';
@@ -521,5 +534,6 @@
         --code-font-family: 'fonts';
     }
 </style>
+
     </body>
 </html>

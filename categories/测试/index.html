@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://ljc-sh.github.io/categories/%E6%B5%8B%E8%AF%95/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Category: 测试 - Taro深海芋头">
+<link rel="stylesheet" href="/scss/style.min.17e4dcb1a0d18128a7f64b0b460ffb65d1acc7a2802981499272bdc0fb1d7364.css"><meta property='og:title' content="Category: 测试 - Taro深海芋头">
 <meta property='og:description' content="欢迎来到我的blog">
 <meta property='og:url' content='https://ljc-sh.github.io/categories/%E6%B5%8B%E8%AF%95/'>
 <meta property='og:site_name' content='Taro深海芋头'>
@@ -490,7 +490,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.4bf048ebcff8edb88026128eb6a8b26f2ecb4b74be4c2619daf5364f0bb1e8ef.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -515,14 +515,50 @@
         container: document.getElementById('aplayer'),
         fixed: true,
         audio: [
+             {
+                name: '藥',
+                artist: '榭季生',
+                url: staticDir + 'music/藥/song.mp3',
+                cover: staticDir + 'music/藥/cover.jpg',
+                lrc: staticDir + 'music/藥/lrc.lrc',
+            },
             {
-                
+                name: '直到你降临',
+                artist: '阿肆',
+                url: staticDir + 'music/直到你降临/song.mp3',
+                cover: staticDir + 'music/直到你降临/cover.jpg',
+                lrc: staticDir + 'music/直到你降临/lrc.lrc',
+            },
+            {
+                name: '我在人民广场吃炸鸡',
+                artist: '阿肆',
+                url: staticDir + 'music/我在人民广场吃炸鸡/song.mp3',
+                cover: staticDir + 'music/我在人民广场吃炸鸡/cover.jpg',
+                lrc: staticDir + 'music/我在人民广场吃炸鸡/lrc.lrc',
+            },
+             {
                 name: 'You are my lucid dream.',
                 artist: 'LightSw1tch',
                 url: staticDir + 'music/youaremyluciddream/song.mp3',
                 cover: staticDir + 'music/youaremyluciddream/cover.jpg',
                 lrc: staticDir + 'music/youaremyluciddream/lrc.lrc',
-            }
+            },
+            {
+
+                name: 'Rec',
+                artist: 'mixed matches/romeo',
+                url: staticDir + 'music/rec/song.mp3',
+                cover: staticDir + 'music/rec/cover.jpg',
+                lrc: staticDir + 'music/rec/lrc.lrc',
+            },
+            {
+                name: '浴室(2019 Reprise)',
+                artist: 'deca joins',
+                url: staticDir + 'music/浴室/song.mp3',
+                cover: staticDir + 'music/浴室/cover.jpg',
+                lrc: staticDir + 'music/浴室/lrc.lrc',
+            },
+
         ]
     });
 
@@ -539,6 +575,93 @@
         --code-font-family: 'fonts';
     }
 </style>
+<script>
+    
 
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+<script>
+    var pjax = new Pjax({
+        selectors: [".main-container", ".js-Pjax"]
+    });
+
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = function (responseText, request, href, options) {
+        if (request.responseText.match("<html")) {
+            if (responseText) {
+                
+                let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+                
+                let bodyClass = newDom.body.className;
+                document.body.setAttribute("class", bodyClass);
+            }
+            
+            pjax._handleResponse(responseText, request, href, options);
+        } else {
+            
+        }
+    };
+
+    
+    document.addEventListener('pjax:complete', () => {
+        
+        window.Stack.init();
+
+        
+        if (document.querySelector('body').classList.contains('post')) {
+            let script = document.createElement('script');
+
+            
+            script.src = 'https://unpkg.com/@waline/client@v3/dist/waline.js';  
+            script.onload = function () {
+                
+                new Waline({
+                    el: '#waline',  
+                    serverURL: 'https://waline-kohl-beta.vercel.app/' 
+                });
+            };
+
+            
+            document.querySelector('.js-Pjax').appendChild(script);
+        }
+    });
+</script>
+
+
+<div class="js-Pjax">
+    
+</div>
     </body>
 </html>

@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>深海芋头</copyright>
-        <lastBuildDate>Wed, 03 Sep 2025 17:34:00 +0800</lastBuildDate><atom:link href="https://ljc-sh.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 05 Sep 2025 21:34:45 +0800</lastBuildDate><atom:link href="https://ljc-sh.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Esp32</title>
+        <link>https://ljc-sh.github.io/categories/esp32/</link>
+        <pubDate>Fri, 05 Sep 2025 21:34:45 +0800</pubDate>
+        
+        <guid>https://ljc-sh.github.io/categories/esp32/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Mathematics</title>
         <link>https://ljc-sh.github.io/categories/mathematics/</link>
         <pubDate>Wed, 03 Sep 2025 17:34:00 +0800</pubDate>

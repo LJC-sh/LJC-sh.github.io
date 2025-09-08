@@ -7,7 +7,31 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>深海芋头</copyright>
-        <lastBuildDate>Fri, 05 Sep 2025 21:34:45 +0800</lastBuildDate><atom:link href="https://ljc-sh.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Sep 2025 23:25:25 +0800</lastBuildDate><atom:link href="https://ljc-sh.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Pumpkinbook</title>
+        <link>https://ljc-sh.github.io/p/pumpkinbook/</link>
+        <pubDate>Mon, 08 Sep 2025 23:25:25 +0800</pubDate>
+        
+        <guid>https://ljc-sh.github.io/p/pumpkinbook/</guid>
+        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Pumpkinbook" /&gt;&lt;h1 id=&#34;pumpkin-book公式推导&#34;&gt;pumpkin book公式推导
+&lt;/h1&gt;&lt;h2 id=&#34;附录&#34;&gt;附录
+&lt;/h2&gt;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
+&lt;/h3&gt;</description>
+        </item>
+        <item>
+        <title>Markdown语法学习</title>
+        <link>https://ljc-sh.github.io/p/0908/</link>
+        <pubDate>Mon, 08 Sep 2025 23:20:14 +0800</pubDate>
+        
+        <guid>https://ljc-sh.github.io/p/0908/</guid>
+        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Markdown语法学习" /&gt;&lt;h1 id=&#34;markdown语法学习&#34;&gt;Markdown语法学习
+&lt;/h1&gt;&lt;h2 id=&#34;附录&#34;&gt;附录
+&lt;/h2&gt;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
+&lt;/h3&gt;</description>
+        </item>
+        <item>
         <title>Esp32-c3-mini knob </title>
         <link>https://ljc-sh.github.io/p/0905/</link>
         <pubDate>Fri, 05 Sep 2025 21:34:45 +0800</pubDate>

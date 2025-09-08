@@ -13,7 +13,17 @@
         <pubDate>Fri, 05 Sep 2025 21:34:45 +0800</pubDate>
         
         <guid>https://ljc-sh.github.io/p/0905/</guid>
-        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Esp32-c3-mini knob " /&gt;&lt;h2 id=&#34;附录&#34;&gt;附录
+        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Esp32-c3-mini knob " /&gt;&lt;h1 id=&#34;硬件设计&#34;&gt;硬件设计
+&lt;/h1&gt;&lt;h1 id=&#34;软件架构&#34;&gt;软件架构
+&lt;/h1&gt;&lt;h2 id=&#34;控制逻辑&#34;&gt;控制逻辑
+&lt;/h2&gt;&lt;p&gt;上电首先连接电脑蓝牙，在连接蓝牙后，进入WS2812B灯光控制模式，在设置好后，进入主模式。&lt;/p&gt;
+&lt;p&gt;nvs存储WS2812B配置信息，长按按钮重新配置后重启。&lt;/p&gt;
+&lt;p&gt;低功耗模式，唤醒&lt;/p&gt;
+&lt;p&gt;灯光模式和颜色设置&lt;/p&gt;
+&lt;p&gt;esp32日志系统用于调试&lt;/p&gt;
+&lt;p&gt;rmt用于控制ws2812b hsv&lt;/p&gt;
+&lt;p&gt;pvnt用于控制ec11&lt;/p&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录
 &lt;/h2&gt;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
 &lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
 &lt;/h3&gt;</description>

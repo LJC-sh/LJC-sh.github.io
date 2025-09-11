@@ -14,8 +14,170 @@
         
         <guid>https://ljc-sh.github.io/p/0908/</guid>
         <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Markdown语法学习" /&gt;&lt;h1 id=&#34;markdown语法学习&#34;&gt;Markdown语法学习
-&lt;/h1&gt;&lt;h2 id=&#34;附录&#34;&gt;附录
-&lt;/h2&gt;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，语法排版简单，让人们更多的关注内容本身而非排版。它使用易读易学的纯文本格式编写文档，可与HTML混编，可导出HTML，PDF以及本身的.md格式文件。因简洁，高效，易读，易写，Markdown被大量使用，如Github,Wikipedia,简书等。&lt;/p&gt;
+&lt;h2 id=&#34;1markdown标题语法&#34;&gt;1.Markdown标题语法
+&lt;/h2&gt;&lt;p&gt;创建标题，在单词或短语前面添加#。#的数量代表标题的级别，#为一号标题，##为二号标题，以此类推&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
+&lt;/h1&gt;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题
+&lt;/h2&gt;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
+&lt;/h3&gt;&lt;p&gt;&amp;hellip;&amp;hellip;.&lt;/p&gt;
+&lt;h2 id=&#34;可选语法&#34;&gt;可选语法
+&lt;/h2&gt;&lt;p&gt;在文本下方添加任意数量的 == 来标识一级标题，或&amp;ndash;来标识二号标题。&lt;/p&gt;
+&lt;p&gt;一级标题&lt;/p&gt;
+&lt;p&gt;=================&lt;/p&gt;
+&lt;p&gt;二级标题&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项
+&lt;/h2&gt;&lt;p&gt;#后跟一个空格隔开#与标题来兼容不同Markdown应用程序的处理&lt;/p&gt;
+&lt;h2 id=&#34;2markdown段落语法&#34;&gt;2.Markdown段落语法
+&lt;/h2&gt;&lt;p&gt;使用空白行或者多行文本进行分割段落&lt;/p&gt;
+&lt;p&gt;不要使用空格或者制表符来缩进段落&lt;/p&gt;
+&lt;h2 id=&#34;3markdown换行语法&#34;&gt;3.Markdown换行语法
+&lt;/h2&gt;&lt;p&gt;在一行的末尾添加两个或者多个空格，然后按回车键，创建一个换行。&lt;/p&gt;
+&lt;p&gt;或者利用&amp;lt;br&amp;gt;来进行回车&lt;/p&gt;
+&lt;h2 id=&#34;4markdown强调语法&#34;&gt;4.Markdown强调语法
+&lt;/h2&gt;&lt;h3 id=&#34;粗体bold&#34;&gt;粗体（Bold)
+&lt;/h3&gt;&lt;p&gt;要加粗文本，有两种处理方法，一种是在要加粗的文本两侧加两个**,另一种则是添加下划线，由于Markdown应用兼容性问题，推荐使用两个星号来进行强调。&lt;/p&gt;
+&lt;p&gt;Love is &lt;strong&gt;bold&lt;/strong&gt;.两个星号&lt;/p&gt;
+&lt;p&gt;Love is &lt;strong&gt;bold&lt;/strong&gt;.两个__&lt;/p&gt;
+&lt;h3 id=&#34;斜体italic&#34;&gt;斜体（Italic）
+&lt;/h3&gt;&lt;p&gt;要用斜体显示文本，请在单词或短语前后添加一个星号或下划线。&lt;/p&gt;
+&lt;p&gt;Love is &lt;em&gt;bold&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Love is &lt;em&gt;bold&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;cat &lt;em&gt;meow&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;cat &lt;em&gt;meow meow meow&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;粗体bold和斜体italic&#34;&gt;粗体(bold)和斜体（Italic）
+&lt;/h3&gt;&lt;p&gt;要同时用斜体和粗体显示文本，请在单词或短语前后各添加三个星号或者下划线。&lt;/p&gt;
+&lt;p&gt;Love is &lt;em&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;cat &lt;em&gt;&lt;strong&gt;meow meow meow&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;5markdown引用语法&#34;&gt;5.Markdown引用语法
+&lt;/h2&gt;&lt;p&gt;创建块引用，请在段落前添加一个&amp;gt;符号&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Love is &lt;em&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p&gt;
+&lt;p&gt;The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;嵌套引用在要嵌套的段落前添加一个&amp;raquo;符号&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Love is &lt;em&gt;bold&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Love is *&lt;strong&gt;simple&lt;/strong&gt;.&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+&lt;p&gt;块引用可以包含其他Markdown格式的元素，并非所有元素都可以使用，需要进行实验来查看哪些元素有效。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&#34;love-is-bold&#34;&gt;Love is &lt;em&gt;bold&lt;/em&gt;.
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Meow&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Meow&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Meow&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;6markdown列表语法&#34;&gt;6.Markdown列表语法
+&lt;/h2&gt;&lt;h3 id=&#34;有序列表&#34;&gt;有序列表
+&lt;/h3&gt;&lt;p&gt;有序列表应以数字1开始&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second&lt;/li&gt;
+&lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;无序列表&#34;&gt;无序列表
+&lt;/h3&gt;&lt;p&gt;在每个列表项前面添加破折号-星号*或加号+，缩进一个列表项可创建嵌套列表&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second&lt;/li&gt;
+&lt;li&gt;Third&lt;/li&gt;
+&lt;li&gt;Fourth
+&lt;ul&gt;
+&lt;li&gt;Fifth
+&lt;ul&gt;
+&lt;li&gt;Sixth
+&lt;ul&gt;
+&lt;li&gt;Seventh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;在列表中嵌套其他元素&#34;&gt;在列表中嵌套其他元素
+&lt;/h3&gt;&lt;p&gt;要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;really&lt;/p&gt;
+&lt;p&gt;really really really really like u&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;..&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;really&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;really really really really like u&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;&amp;hellip;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;代码块&#34;&gt;代码块
+&lt;/h4&gt;&lt;p&gt;代码块通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the following code block on line 21:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;prinf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;love is bold&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the title to match the name of your website.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在Typora中可以使用`包裹代码前后来引入单行代码 ```来引入多行代码&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; printf(&amp;quot;hello markdown&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello markdown&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;图片&#34;&gt;图片
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;听到了一首好听的歌来自keshi的skeletons&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;插入图片.&lt;/p&gt;
+&lt;p&gt;！&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/assets/images/skeletons.png&#34; &gt;skeletons&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以按ctrl+[来跳出列表嵌套或shift+Tab&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;7markdown代码语法&#34;&gt;7.Markdown代码语法
+&lt;/h2&gt;&lt;p&gt;要将单词或短语表示为代码，将其包裹在&lt;code&gt;反引号&lt;/code&gt;（`)中&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Love is bold&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;代码块-1&#34;&gt;代码块
+&lt;/h4&gt;&lt;p&gt;要创建代码块，将代码块每一行缩进至少四个空格或者一个制表符&lt;/p&gt;
+&lt;h2 id=&#34;8markdown分割线语法&#34;&gt;8.Markdown分割线语法
+&lt;/h2&gt;&lt;p&gt;要创建分隔线，请在单独一行使用三个或多个星号***、破折号&amp;mdash;或下划线___，并且不能包含其他内容&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;9markdown链接语法&#34;&gt;9.Markdown链接语法
+&lt;/h2&gt;&lt;p&gt;链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。&lt;/p&gt;
+&lt;p&gt;超链接Markdown语法代码：&lt;code&gt;[超链接显示名](超链接地址 &amp;quot;超链接title&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;欢迎来到我的博客&lt;a class=&#34;link&#34; href=&#34;[%e6%96%b0%e5%bb%ba%e6%a0%87%e7%ad%be%e9%a1%b5]%28https://ljc-sh.github.io/%29&#34; &gt;taro的博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;欢迎来到我的博客&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/&#34;  title=&#34;Love is bold&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tttaro的博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ljc-sh.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:1181269655@qq.com&#34; &gt;1181269655@qq.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
 &lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
 &lt;/h3&gt;</description>
         </item>

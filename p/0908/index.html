@@ -332,6 +332,16 @@ article-page
     <li><a href="#8markdown分割线语法">8.Markdown分割线语法</a></li>
     <li><a href="#9markdown链接语法">9.Markdown链接语法</a>
       <ol>
+        <li>
+          <ol>
+            <li><a href="#带格式化的链接">带格式化的链接</a></li>
+            <li><a href="#引用类型链接">引用类型链接</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#10markdown图片语法">10.Markdown图片语法</a>
+      <ol>
         <li><a href="#参考文献">参考文献</a></li>
         <li><a href="#版权信息">版权信息</a></li>
       </ol>
@@ -409,7 +419,7 @@ article-page
 
         <time class="article-words">
             
-            约7分钟，共1450字
+            约9分钟，共1844字
         </time>
     </div>
     
@@ -575,7 +585,16 @@ article-page
 </li>
 <li>
 <p>插入图片.</p>
-<p>！<a class="link" href="/assets/images/skeletons.png" >skeletons</a></p>
+<p><img src="/assets/images/skeletons.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="skeletons"
+	
+	
+></p>
 </li>
 <li>
 <p>可以按ctrl+[来跳出列表嵌套或shift+Tab</p>
@@ -601,6 +620,36 @@ article-page
 <p><a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
     >https://ljc-sh.github.io/</a></p>
 <p><a class="link" href="mailto:1181269655@qq.com" >1181269655@qq.com</a></p>
+<p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接</p>
+<h4 id="带格式化的链接">带格式化的链接
+</h4><p>强调链接，在链接语法前后添加星号。要将链接表示为代码，请在方括号中添加反引号</p>
+<p>Welcome to my <strong><a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
+    >blog</a></strong></p>
+<p>Welcome to my <em><a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
+    >blog</a></em></p>
+<p>Welcome to my <a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
+    ><code>blog</code></a></p>
+<h4 id="引用类型链接">引用类型链接
+</h4><p>引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。</p>
+<h5 id="链接的第一部分格式">链接的第一部分格式
+</h5><p>引用类型的链接的第一部分使用两组括号进行格式设置。第一组方括号包围应显示为链接的文本。第二组括号显示了一个标签，该标签用于指向您存储在文档其他位置的链接。</p>
+<p>尽管不是必需的，可以在第一组和第二组括号之间包含一个空格。第二组括号中的标签不区分大小写，可以包含字母，数字，空格或标点符号。</p>
+<ul>
+<li><a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
+    >Taro深海芋头</a></li>
+</ul>
+<h2 id="10markdown图片语法">10.Markdown图片语法
+</h2><p>插入图片Markdown语法代码：<code>![图片alt](图片链接 &quot;图片title&quot;)</code>。</p>
+<p><img src="/assets/images/skeletons.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Skeletons"
+	
+	
+></p>
 <h3 id="参考文献">参考文献
 </h3><h3 id="版权信息">版权信息
 </h3>

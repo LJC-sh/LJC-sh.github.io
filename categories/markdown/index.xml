@@ -13,7 +13,7 @@
         <pubDate>Mon, 08 Sep 2025 23:20:14 +0800</pubDate>
         
         <guid>https://ljc-sh.github.io/p/0908/</guid>
-        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Markdown语法学习" /&gt;&lt;h1 id=&#34;markdown语法学习&#34;&gt;Markdown语法学习
+        <description>&lt;img src="https://ljc-sh.github.io/p/0908/cover.png" alt="Featured image of post Markdown语法学习" /&gt;&lt;h1 id=&#34;markdown语法学习&#34;&gt;Markdown语法学习
 &lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，语法排版简单，让人们更多的关注内容本身而非排版。它使用易读易学的纯文本格式编写文档，可与HTML混编，可导出HTML，PDF以及本身的.md格式文件。因简洁，高效，易读，易写，Markdown被大量使用，如Github,Wikipedia,简书等。&lt;/p&gt;
 &lt;h2 id=&#34;1markdown标题语法&#34;&gt;1.Markdown标题语法
 &lt;/h2&gt;&lt;p&gt;创建标题，在单词或短语前面添加#。#的数量代表标题的级别，#为一号标题，##为二号标题，以此类推&amp;hellip;&lt;/p&gt;
@@ -151,7 +151,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;插入图片.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ljc-sh.github.io/assets/images/skeletons.png&#34;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5czym%5cDesktop%5cweb%5chugo_extended_0.149.0_windows-amd64%5ctaro%5cassets%5cimages%5cskeletons.jpg&#34;
 	
 	
 	
@@ -206,19 +206,106 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;10markdown图片语法&#34;&gt;10.Markdown图片语法
 &lt;/h2&gt;&lt;p&gt;插入图片Markdown语法代码：&lt;code&gt;![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ljc-sh.github.io/assets/images/skeletons.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;E:%5cBackground%5c5zSEyJVTOJo2X6.jpg&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Skeletons&#34;
+		alt=&#34;Spider Man&#34;
 	
 	
 &gt;&lt;/p&gt;
+&lt;h4 id=&#34;给图像添加链接&#34;&gt;给图像添加链接
+&lt;/h4&gt;&lt;p&gt;给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;E:%5cBackground%5cAvator.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Spider Man&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;11markdown转义字符语法&#34;&gt;11.Markdown转义字符语法
+&lt;/h2&gt;&lt;p&gt;要显示原本用于格式化的Markdown文档的字符，请在字符前面添加反斜杠字符\。&lt;/p&gt;
+&lt;p&gt;* Without the backslash, this would be a bullet in an unordered list.&lt;/p&gt;
+&lt;h3 id=&#34;可做转义的字符&#34;&gt;可做转义的字符
+&lt;/h3&gt;&lt;p&gt;以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Character&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\&lt;/td&gt;
+          &lt;td&gt;backslash&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;`&lt;/td&gt;
+          &lt;td&gt;backtick (see also &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/escaping-characters.html#escaping-backticks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;escaping backticks in code&lt;/a&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;*&lt;/td&gt;
+          &lt;td&gt;asterisk&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;underscore&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{ }&lt;/td&gt;
+          &lt;td&gt;curly braces&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[ ]&lt;/td&gt;
+          &lt;td&gt;brackets&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;( )&lt;/td&gt;
+          &lt;td&gt;parentheses&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;#&lt;/td&gt;
+          &lt;td&gt;pound sign&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;+&lt;/td&gt;
+          &lt;td&gt;plus sign&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;minus sign (hyphen)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;.&lt;/td&gt;
+          &lt;td&gt;dot&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;!&lt;/td&gt;
+          &lt;td&gt;exclamation mark&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;|&lt;/td&gt;
+          &lt;td&gt;pipe (see also &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/extended-syntax/escaping-pipe-characters-in-tables.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;escaping pipe in tables&lt;/a&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h3 id=&#34;参考文献&#34;&gt;参考文献
-&lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/&#34;  title=&#34;blog&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1&lt;/a&gt;:&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown 基本语法 | Markdown 教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;MIT License&lt;/strong&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

@@ -10,10 +10,10 @@
 <meta property='og:description' content="Markdown语法学习 Markdown是一种轻量级标记语言，语法排版简单，让人们更多的关注内容本身而非排版。它使用易读易学的纯文本格式编写文档，可与HTML混编，可导出HTML，PDF以及本身的.md格式文件。因简洁，高效，易读，易写，Markdown被大量使用，如Github,Wikipedia,简书等。\n">
 <meta property='og:url' content='https://ljc-sh.github.io/p/0908/'>
 <meta property='og:site_name' content='Taro深海芋头'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:published_time' content='2025-09-08T23:20:14&#43;08:00'/><meta property='article:modified_time' content='2025-09-08T23:20:14&#43;08:00'/><meta property='og:image' content='https://ljc-sh.github.io/cover.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:published_time' content='2025-09-08T23:20:14&#43;08:00'/><meta property='article:modified_time' content='2025-09-08T23:20:14&#43;08:00'/><meta property='og:image' content='https://ljc-sh.github.io/p/0908/cover.png' />
 <meta name="twitter:title" content="Markdown语法学习">
 <meta name="twitter:description" content="Markdown语法学习 Markdown是一种轻量级标记语言，语法排版简单，让人们更多的关注内容本身而非排版。它使用易读易学的纯文本格式编写文档，可与HTML混编，可导出HTML，PDF以及本身的.md格式文件。因简洁，高效，易读，易写，Markdown被大量使用，如Github,Wikipedia,简书等。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://ljc-sh.github.io/cover.png' />
+    <meta name="twitter:image" content='https://ljc-sh.github.io/p/0908/cover.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -342,6 +342,16 @@ article-page
     </li>
     <li><a href="#10markdown图片语法">10.Markdown图片语法</a>
       <ol>
+        <li>
+          <ol>
+            <li><a href="#给图像添加链接">给图像添加链接</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#11markdown转义字符语法">11.Markdown转义字符语法</a>
+      <ol>
+        <li><a href="#可做转义的字符">可做转义的字符</a></li>
         <li><a href="#参考文献">参考文献</a></li>
         <li><a href="#版权信息">版权信息</a></li>
       </ol>
@@ -361,8 +371,12 @@ article-page
     <header class="article-header">
         <div class="article-image">
             <a href="/p/0908/">
-                
-                    <img src="/cover.png" loading="lazy" alt="Featured image of post Markdown语法学习" />
+                <img src="/p/0908/cover_hu_c80e2190b4b8cddc.png"
+                        srcset="/p/0908/cover_hu_c80e2190b4b8cddc.png 800w, /p/0908/cover_hu_4312af3fd556525f.png 1600w"
+                        width="800" 
+                        height="400" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown语法学习" />
                 
             </a>
         </div>
@@ -419,7 +433,7 @@ article-page
 
         <time class="article-words">
             
-            约9分钟，共1844字
+            约10分钟，共2057字
         </time>
     </div>
     
@@ -585,7 +599,7 @@ article-page
 </li>
 <li>
 <p>插入图片.</p>
-<p><img src="/assets/images/skeletons.png"
+<p><img src="C:%5cUsers%5czym%5cDesktop%5cweb%5chugo_extended_0.149.0_windows-amd64%5ctaro%5cassets%5cimages%5cskeletons.jpg"
 	
 	
 	
@@ -640,19 +654,106 @@ article-page
 </ul>
 <h2 id="10markdown图片语法">10.Markdown图片语法
 </h2><p>插入图片Markdown语法代码：<code>![图片alt](图片链接 &quot;图片title&quot;)</code>。</p>
-<p><img src="/assets/images/skeletons.jpg"
+<p><img src="E:%5cBackground%5c5zSEyJVTOJo2X6.jpg"
 	
 	
 	
 	loading="lazy"
 	
-		alt="Skeletons"
+		alt="Spider Man"
 	
 	
 ></p>
+<h4 id="给图像添加链接">给图像添加链接
+</h4><p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。</p>
+<p><a class="link" href="https://ljc-sh.github.io/"  target="_blank" rel="noopener"
+    ><img src="E:%5cBackground%5cAvator.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Spider Man"
+	
+	
+></a></p>
+<h2 id="11markdown转义字符语法">11.Markdown转义字符语法
+</h2><p>要显示原本用于格式化的Markdown文档的字符，请在字符前面添加反斜杠字符\。</p>
+<p>* Without the backslash, this would be a bullet in an unordered list.</p>
+<h3 id="可做转义的字符">可做转义的字符
+</h3><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Character</th>
+          <th>Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>\</td>
+          <td>backslash</td>
+      </tr>
+      <tr>
+          <td>`</td>
+          <td>backtick (see also <a class="link" href="https://markdown.com.cn/basic-syntax/escaping-characters.html#escaping-backticks"  target="_blank" rel="noopener"
+    >escaping backticks in code</a>)</td>
+      </tr>
+      <tr>
+          <td>*</td>
+          <td>asterisk</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td>underscore</td>
+      </tr>
+      <tr>
+          <td>{ }</td>
+          <td>curly braces</td>
+      </tr>
+      <tr>
+          <td>[ ]</td>
+          <td>brackets</td>
+      </tr>
+      <tr>
+          <td>( )</td>
+          <td>parentheses</td>
+      </tr>
+      <tr>
+          <td>#</td>
+          <td>pound sign</td>
+      </tr>
+      <tr>
+          <td>+</td>
+          <td>plus sign</td>
+      </tr>
+      <tr>
+          <td>-</td>
+          <td>minus sign (hyphen)</td>
+      </tr>
+      <tr>
+          <td>.</td>
+          <td>dot</td>
+      </tr>
+      <tr>
+          <td>!</td>
+          <td>exclamation mark</td>
+      </tr>
+      <tr>
+          <td>|</td>
+          <td>pipe (see also <a class="link" href="https://markdown.com.cn/extended-syntax/escaping-pipe-characters-in-tables.html"  target="_blank" rel="noopener"
+    >escaping pipe in tables</a>)</td>
+      </tr>
+  </tbody>
+</table></div>
 <h3 id="参考文献">参考文献
-</h3><h3 id="版权信息">版权信息
-</h3>
+</h3><p><a class="link" href="https://ljc-sh.github.io/"  title="blog"
+     target="_blank" rel="noopener"
+    >1</a>:<a class="link" href="https://markdown.com.cn/basic-syntax/"  target="_blank" rel="noopener"
+    >Markdown 基本语法 | Markdown 教程</a></p>
+<h3 id="版权信息">版权信息
+</h3><p><strong>MIT License</strong></p>
+
 </section>
 
 

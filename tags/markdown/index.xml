@@ -151,14 +151,18 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;插入图片.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5czym%5cDesktop%5cweb%5chugo_extended_0.149.0_windows-amd64%5ctaro%5cassets%5cimages%5cskeletons.jpg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://ljc-sh.github.io/p/0908/skeletons.jpg&#34;
+	width=&#34;800&#34;
+	height=&#34;800&#34;
+	srcset=&#34;https://ljc-sh.github.io/p/0908/skeletons_hu_6995334c66420685.jpg 480w, https://ljc-sh.github.io/p/0908/skeletons_hu_ca76905d7a5416d4.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;skeletons&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -206,27 +210,35 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;10markdown图片语法&#34;&gt;10.Markdown图片语法
 &lt;/h2&gt;&lt;p&gt;插入图片Markdown语法代码：&lt;code&gt;![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;E:%5cBackground%5c5zSEyJVTOJo2X6.jpg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://ljc-sh.github.io/p/0908/background.jpg&#34;
+	width=&#34;1559&#34;
+	height=&#34;720&#34;
+	srcset=&#34;https://ljc-sh.github.io/p/0908/background_hu_24c83679d6ff5d1.jpg 480w, https://ljc-sh.github.io/p/0908/background_hu_83f282db2811df36.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Spider Man&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;216&#34;
+		data-flex-basis=&#34;519px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;给图像添加链接&#34;&gt;给图像添加链接
 &lt;/h4&gt;&lt;p&gt;给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ljc-sh.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;E:%5cBackground%5cAvator.jpg&#34;
-	
-	
-	
+    &gt;&lt;img src=&#34;https://ljc-sh.github.io/p/0908/Avator.jpg&#34;
+	width=&#34;850&#34;
+	height=&#34;500&#34;
+	srcset=&#34;https://ljc-sh.github.io/p/0908/Avator_hu_16b16ca87f82c3ea.jpg 480w, https://ljc-sh.github.io/p/0908/Avator_hu_b97ee90db15fa6.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Spider Man&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;11markdown转义字符语法&#34;&gt;11.Markdown转义字符语法

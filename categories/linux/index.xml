@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Linux on Taro深海芋头</title>
+        <link>https://ljc-sh.github.io/categories/linux/</link>
+        <description>Recent content in Linux on Taro深海芋头</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>深海芋头</copyright>
+        <lastBuildDate>Fri, 19 Sep 2025 22:07:26 +0800</lastBuildDate><atom:link href="https://ljc-sh.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux命令</title>
+        <link>https://ljc-sh.github.io/p/0919/</link>
+        <pubDate>Fri, 19 Sep 2025 22:07:26 +0800</pubDate>
+        
+        <guid>https://ljc-sh.github.io/p/0919/</guid>
+        <description>&lt;img src="https://ljc-sh.github.io/cover.png" alt="Featured image of post Linux命令" /&gt;&lt;h1 id=&#34;linux-命令学习记录&#34;&gt;Linux 命令学习记录
+&lt;/h1&gt;&lt;h2 id=&#34;linux-vivim&#34;&gt;Linux vi/vim
+&lt;/h2&gt;&lt;h3 id=&#34;vivim-的使用&#34;&gt;vi/vim 的使用
+&lt;/h3&gt;&lt;p&gt;基本上 vi/vim 分为三种模式，&lt;strong&gt;命令模式（Command Mode),输入模式（Insert Mode)和命令行模式(Command -Line Mode).&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;命令模式&#34;&gt;命令模式
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;用户刚刚启动 vi/vim，便进入了命令模式。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此状态下敲击键盘会被 vim 识别为命令，而非输入字符，比如我们此时按下&lt;code&gt;i&lt;/code&gt; ,并不会输入一个字符，&lt;code&gt;i&lt;/code&gt;被当作了一个命令。&lt;/p&gt;
+&lt;p&gt;以下是普通模式常用的几个命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; &amp;ndash; 切换到输入模式，在光标当前位置开始输入文本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;x&lt;/strong&gt; &amp;ndash; 删除当前光标所在处的字符。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:&lt;/strong&gt; &amp;ndash; 切换到底线命令模式，以在最底一行输入命令。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a&lt;/strong&gt; &amp;ndash; 进入插入模式，在光标下一个位置开始输入文本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;o&lt;/strong&gt;：在当前行的下方插入一个新行，并进入插入模式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O&lt;/strong&gt; &amp;ndash; 在当前行的上方插入一个新行，并进入插入模式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;dd&lt;/strong&gt; &amp;ndash; 剪切当前行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;yy&lt;/strong&gt; &amp;ndash; 复制当前行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;p&lt;/strong&gt;（小写） &amp;ndash; 粘贴剪贴板内容到光标下方。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;P&lt;/strong&gt;（大写）&amp;ndash; 粘贴剪贴板内容到光标上方。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;u&lt;/strong&gt; &amp;ndash; 撤销上一次操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ctrl + r&lt;/strong&gt; &amp;ndash; 重做上一次撤销的操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:w&lt;/strong&gt; &amp;ndash; 保存文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:q&lt;/strong&gt; &amp;ndash; 退出 Vim 编辑器。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:q!&lt;/strong&gt; &amp;ndash; 强制退出 Vim 编辑器，不保存修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;若想要编辑文本，只需要启动 Vim，进入了命令模式，按下 &lt;strong&gt;i&lt;/strong&gt; 切换到输入模式即可。&lt;/p&gt;
+&lt;p&gt;命令模式只有一些最基本的命令，因此仍要依靠&lt;strong&gt;底线命令行模式&lt;/strong&gt;输入更多命令。&lt;/p&gt;
+&lt;h3 id=&#34;输入模式&#34;&gt;输入模式
+&lt;/h3&gt;&lt;p&gt;在命令模式下按下&lt;code&gt;i&lt;/code&gt;就进入了输入模式，使用&lt;code&gt;Esc&lt;/code&gt;可以返回到普通模式&lt;/p&gt;
+&lt;p&gt;在输入模式中，可以使用以下按键：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;字符按键以及 Shift 组合&lt;/strong&gt;，输入字符&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ENTER&lt;/strong&gt;，回车键，换行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BACK SPACE&lt;/strong&gt;，退格键，删除光标前一个字符&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DEL&lt;/strong&gt;，删除键，删除光标后一个字符&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方向键&lt;/strong&gt;，在文本中移动光标&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HOME&lt;/strong&gt;/&lt;strong&gt;END&lt;/strong&gt;，移动光标到行首/行尾&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page Up&lt;/strong&gt;/&lt;strong&gt;Page Down&lt;/strong&gt;，上/下翻页&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Insert&lt;/strong&gt;，切换光标为输入/替换模式，光标将变成竖线/下划线&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ESC&lt;/strong&gt;，退出输入模式，切换到命令模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;底线命令模式&#34;&gt;底线命令模式
+&lt;/h4&gt;&lt;p&gt;在命令模式下按下 &lt;strong&gt;:&lt;/strong&gt;（英文冒号）就进入了底线命令模式。&lt;/p&gt;
+&lt;p&gt;底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。&lt;/p&gt;
+&lt;p&gt;在底线命令模式中，基本的命令有（已经省略了冒号）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:w&lt;/code&gt;：保存文件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q&lt;/code&gt;：退出 Vim 编辑器。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:wq&lt;/code&gt;：保存文件并退出 Vim 编辑器。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q!&lt;/code&gt;：强制退出 Vim 编辑器，不保存修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;按 &lt;strong&gt;ESC&lt;/strong&gt; 键可随时退出底线命令模式。&lt;/p&gt;
+&lt;h2 id=&#34;linux-apt-命令&#34;&gt;Linux apt 命令
+&lt;/h2&gt;&lt;p&gt;apt（Advanced Packaging Tool）是一个在 Debian 和 Ubuntu 中的 Shell 前端软件包管理器。&lt;/p&gt;
+&lt;p&gt;apt 命令提供了查找、安装、升级、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。&lt;/p&gt;
+&lt;p&gt;apt 命令执行需要超级管理员权限(root)。&lt;/p&gt;
+&lt;h3 id=&#34;apt-语法&#34;&gt;apt 语法
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;apt [options] [command] [package ...] &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**options：**可选，选项包括 -h（帮助），-y（当安装过程提示选择全部为&amp;quot;yes&amp;quot;），-q（不显示安装的过程）等等。&lt;/li&gt;
+&lt;li&gt;**command：**要进行的操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;package&lt;/strong&gt;：安装的包名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录
+&lt;/h2&gt;&lt;h3 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h3&gt;&lt;h3 id=&#34;版权信息&#34;&gt;版权信息
+&lt;/h3&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
